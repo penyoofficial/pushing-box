@@ -1,0 +1,44 @@
+* {
+    --unit-size: 30px;
+
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.op {
+    padding-top: 30px;
+    text-align: center;
+}
+
+#map {
+    --r: 8;
+    --c: 8;
+
+    margin: 30px auto;
+    width: calc(var(--unit-size) * var(--c));
+    height: calc(var(--unit-size) * var(--r));
+    border: 2px solid #000;
+    transition: all 1s;
+    text-align: center;
+    line-height: calc(var(--unit-size) * var(--r));
+}
+
+.brick {
+    --a: 1;
+
+    float: left;
+    width: calc(var(--unit-size) * var(--a));
+    height: calc(var(--unit-size) * var(--a));
+    background: linear-gradient(to bottom right, #fff, #ddd);
+    transition: all 0.5s;
+    color: #000;
+    line-height: calc(var(--unit-size) * var(--a));
+}
+
+#notice {
+    color: #888;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+}
